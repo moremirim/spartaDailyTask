@@ -1,0 +1,14 @@
+task URL: https://school.programmers.co.kr/learn/courses/30/lessons/120820
+
+제출: 
+
+import Foundation
+
+func solution(_ age:Int) -> Int {
+   var baseYear: Int = 2022
+    var result: Int = baseYear - age + 1
+    return result
+}
+
+// 기준년도가 변경될 수 있으므로 baseYear 변수 선언
+// var age = Int.random(in: 0<..120)
