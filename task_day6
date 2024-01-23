@@ -1,0 +1,19 @@
+task URL: https://school.programmers.co.kr/learn/courses/30/lessons/120802
+
+제출:
+
+import Foundation
+
+func solution(_ num1:Int, _ num2:Int) -> Int {
+    guard (num1 >= -50000 && num1 <= 50000), (num2 >= -50000 && num2 <= 50000) else {
+        return 0
+    }
+    return num1 + num2;
+}
+
+/*
+guard 문 사용 - else 항상 필요
+guard 함수 수행에 요구되는 조건 (수행 조건을 적음으로써 부정 조건식 대비 가독성 향상), 쉼표(,)를 통해 여러 조건 연결 가능
+else {return}   // 그렇지 않으면 반환 (조건이 거짓일 때, else의 실행 -> else 구문 수행 뒤 함수 종료, return과 throw와 같은 종료 명령 필요)
+~~~  //return, print 등 수행코드
+*/
