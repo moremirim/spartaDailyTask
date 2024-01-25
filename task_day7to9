@@ -1,0 +1,46 @@
+task URL: https://school.programmers.co.kr/learn/courses/30/lessons/120806
+
+제출:
+
+import Foundation
+
+func solution(_ num1: Int,_ num2: Int) -> Int {
+     return num1 * 1000 / num2 ;
+}
+
+
+task URL: https://school.programmers.co.kr/learn/courses/30/lessons/120829
+
+제출: 
+
+import Foundation
+
+func solution(_ angle: Int) -> Int {
+    guard 1...180 ~= angle else { return -1 }
+    
+    switch angle {
+    case 1...89: return 1
+    case 90: return   2
+    case 91...179: return 3
+    default: return 4
+    }
+}
+
+
+task URL: https://school.programmers.co.kr/learn/courses/30/lessons/120831
+
+제출:
+
+import Foundation
+
+var total: Int = 0
+
+func solution(_ n:Int) -> Int {
+    guard 1...1000 ~= n else { return -1 }
+    for i in 1...n {
+        if i % 2 == 0 {
+            total += i
+        }
+    } 
+    return ( total )
+}
