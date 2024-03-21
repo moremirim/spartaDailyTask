@@ -7,8 +7,8 @@ func solution(_ n:Int) -> Int {
     var nToArray: [Int?] = []
     var total: Int = 0
     
-    for str in nToStr {
-        nToArray.append(Int(String(str)) ?? 0)
+    for char in nToStr {
+        nToArray.append(Int(String(char)) ?? 0)
     }
     for i in nToArray {
             total += i!
